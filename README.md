@@ -5,21 +5,21 @@ TCP transmission based on UDP
 ## Basic use
 1. run Receiver.class first by typing:
 
-$ java Receiver <filename> <listening_port> <sender_IP> <sender_port> <log_filename>
+  $ java Receiver <filename> <listening_port> <sender_IP> <sender_port> <log_filename>
 
-for example:
+  for example:
 
-$ java Receiver rcv_file.txt 20000 127.0.0.1 20001 log_file_recv.txt
+  $ java Receiver rcv_file.txt 20000 127.0.0.1 20001 log_file_recv.txt
 
-You can also transfer file rcv_file.png.
+  You can also transfer file rcv_file.png.
 
 2. run Sender.class by typing:
 
-$ java Sender <filename> <remote_IP> <remote_port> <ack_port_num> <log_filename> <optional:window_size>
+  $ java Sender <filename> <remote_IP> <remote_port> <ack_port_num> <log_filename> <optional:window_size>
 
-for example:
+  for example:
 
-$ java Sender snd_file.txt 127.0.0.1 20000 20001 log_file_send.txt 2
+  $ java Sender snd_file.txt 127.0.0.1 20000 20001 log_file_send.txt 2
 
 3. if you’re going to use newudpl emulator, remind that sender’s UDP port set as 21112.
 
